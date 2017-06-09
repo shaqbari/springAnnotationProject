@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ <configuration>
+ 	<typeAliases>
+ 		<typeAlias type="com.sist.dao.EmpVO" alias="Emp"/>
+ 	</typeAliases>
+ 	<!-- 오라클 환경설정은 spring에서 할것이다. -->
+ 	
+ 	<!-- 아래가 mapper import시키는 부분이다. -->
+ 	<mappers>
+ 		<mapper resource="com/sist/dao/emp-mapper.xml"/>	
+ 	</mappers>
+ </configuration>
